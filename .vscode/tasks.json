@@ -3,15 +3,14 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "Build with GCC",
+			"label": "Build with GCC v13.1.0",
 			"command": "C:\\mingw64\\bin\\g++.exe",
 			"args": [
-				"-fdiagnostics-color=always",
 				"-g",
 				"-std=c++20",
-				"${file}",
+				"${workspaceFolder}\\*.cpp",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"${fileDirname}\\shell.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -21,6 +20,47 @@
 			],
 			"group": "build",
 			"detail": "compiler: C:\\mingw64\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with Clang++ v16.0.5",
+			"command": "C:\\mingw64\\bin\\clang++.exe",
+			"args": [
+				"-g",
+				"-std=c++20",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\shell.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\mingw64\\bin\\clang++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with MSVC",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/std:c++latest",
+				"/EHsc",
+				"/Fe:",
+				"${fileDirname}\\shell.exe",
+				"${workspaceFolder}\\*.cpp"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"detail": "compiler: cl.exe"
 		}
 	]
 }
