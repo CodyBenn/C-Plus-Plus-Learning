@@ -22,7 +22,7 @@ int main()
     
     //Lets try an input console command
     //Below we'll assign variables for later
-    int EnteredAge;
+    int age2;
     std::string name;
 
     //Using this code we have the user print the information needed.
@@ -30,9 +30,9 @@ int main()
     std::getline(std::cin, name);
 
     std::cout << "Please type in your age here : " << std::endl;
-    std::cin >> EnteredAge;
+    std::cin >> age2;
 
     //Here we combine the two to have the console ask for input, and assign the keyed data as the printed output.
-    std::cout << "Hello " << name << "! You are " << EnteredAge << " years old." << std::endl;
+    std::cout << "Hello " << name << "! You are " << age2 << " years old." << std::endl;
     
 }
