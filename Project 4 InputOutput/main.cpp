@@ -18,7 +18,8 @@ int main()
     //std::clog is used to print logs to the console.
     std::clog << "std::clog output : This is a log message" << std::endl;
 
-
+    std::cout << "---------------" << std::endl;
+    
     //Lets try an input console command
     //Below we'll assign variables for later
     int EnteredAge;
