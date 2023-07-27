@@ -1,6 +1,6 @@
 #include <iostream>
 
-//This program is used as an example to show the order of operations in a program.
+//This program is used as an example to show the order of operations in a program
 int add_numbers(int a, int b)
 {
     return a + b;
@@ -8,7 +8,6 @@ int add_numbers(int a, int b)
 
 int main()
 {
-    //
     int a = 10;
     int b = 5;
     int c;
