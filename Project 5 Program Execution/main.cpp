@@ -8,7 +8,6 @@ int add_numbers(int a, int b)
 
 int main()
 {
-    //Independent study day
     
     int a = 10;
     int b = 5;
