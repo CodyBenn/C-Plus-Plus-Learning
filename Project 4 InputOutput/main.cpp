@@ -3,10 +3,8 @@
 int main()
 {
     //These are some examples of std:: commands.
-
     //std::cout is used to print to the console.
     std::cout <<"Hello world!" << std::endl;
-    
     std::cout << "The number is : " << 12 << std::endl;
 
     int age {28};
@@ -27,7 +25,7 @@ int main()
 
     //Using this code we have the user print the information needed.
     std::cout << "Please type in your full name here : " << std::endl;
-    std::getline(std::cin, name);
+    std::cin >> name;
 
     std::cout << "Please type in your age here : " << std::endl;
     std::cin >> age2;
