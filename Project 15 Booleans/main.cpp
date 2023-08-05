@@ -14,7 +14,7 @@ int main()
         std::cout << "Go through!" << std::endl;
     }  
 
-    if(green_light);
+    if(green_light)
     {
         std::cout << "Light is green!" << std::endl;
     }
