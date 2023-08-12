@@ -22,15 +22,16 @@ int main()
     
     //Enter code here
     int result;
-    result = siblings % popsicles;
+    result = popsicles % siblings;
+    std::cout << result << std::endl;
 
-    if(result >= 1)
+    if(result == 0)
     {
         std::cout << "give away" << std::endl;
     }
     else
     {
-        std::cout << "eath them yourself" << std::endl;
+        std::cout << "eat them yourself" << std::endl;
     }
 
     return 0;
