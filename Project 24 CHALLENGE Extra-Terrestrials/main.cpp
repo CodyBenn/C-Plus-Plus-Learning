@@ -24,7 +24,7 @@ int main()
 {
     std::string alien;
     std::cin >> alien;
-
+    
     reverse(alien.begin(), alien.end());
     std::cout << alien << std::endl;
     
