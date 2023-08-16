@@ -3,7 +3,6 @@
 int main()
 {
 	int max{};
-    
     int a{35};
     int b{200};
 	
@@ -21,6 +20,6 @@ int main()
     max = (a > b)? a : b; // Ternary operator
 	
     std::cout << "max : " << max << std::endl;
-   
+    
     return 0;
 }
