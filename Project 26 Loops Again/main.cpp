@@ -11,9 +11,6 @@ int main()
         std::cout << "I love C++" << std::endl;
     }
 
-
-
-
     //Range Based
 
     //While
