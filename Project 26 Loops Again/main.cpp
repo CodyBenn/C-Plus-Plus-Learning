@@ -34,8 +34,29 @@ int main()
     std::cout << "i : " << i << std::endl; //Compiler Error : i is not in scope
     */
 
+    //Iterator declared outside of the loop
+    /*
+    size_t i{0}; //Defines Iterator outside of loop
+    
+    for(i; i < count; ++i)
+    {
+    std::cout << i << " : My legs!" << std::endl;
+    }
+    std::cout << "Loop is finished" << std::endl;
+    std::cout << "i : " << i << std::endl;
+    */
+    
+    //DONT hardcode values, it's bad.
 
-
+    const size_t COUNT{1000};
+    size_t i{0};
+    
+    for(i; i < COUNT; ++i)
+    {
+    std::cout << i << " : My legs!" << std::endl;
+    }
+    std::cout << "Loop is finished" << std::endl;
+    std::cout << "loops using i : " << i << std::endl;
 
     //==================================================================================================================
     std::cout << "==============================" << std::endl;
