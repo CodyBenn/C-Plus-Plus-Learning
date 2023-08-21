@@ -2,7 +2,7 @@
 
 int main()
 {
-    const size_t COUNT{10};
+    const size_t COUNT{100};
     size_t i{0}; //Iterator declaration
 
     while(i < COUNT)
