@@ -26,16 +26,13 @@ int main()
     std::string ra = "Ra!";
     std::cin >> yards;
 
-    if(yards > 10)
-    {
+    if(yards > 10){
         std::cout << "High Five" << std::endl;
     }
-    else if(yards < 1)
-    {
+    else if(yards < 1){
         std::cout << "shh" << std::endl;
     }
-    else
-    {
+    else{
         for(int i = 0; i < yards; i++)
         std::cout << ra << std::endl;
     }
