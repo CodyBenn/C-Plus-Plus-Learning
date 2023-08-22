@@ -22,8 +22,8 @@
 
 int main()
 {
-    std::string ra = "Ra!";
     int yards;
+    std::string ra = "Ra!";
     std::cin >> yards;
 
     if(yards > 10)
@@ -39,4 +39,6 @@ int main()
         for(int i = 0; i < yards; i++)
         std::cout << ra << std::endl;
     }
+
+   return 0;
 }
