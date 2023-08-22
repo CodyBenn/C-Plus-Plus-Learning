@@ -1,8 +1,7 @@
 #include <iostream>
 
-//CHALLENGE PROBLEM TASK SET GO DO
-
 /*
+Scenario
 Playground Tickets
 You are making an app to control the entrance of a playground and 
 output the ticket category based on the age of the customer.
@@ -14,8 +13,12 @@ Normal: Age 7+ get a normal ticket.
 Task
 Take the age of the customer as input, then output the 
 ticket category corresponding to that age.
-For example, if the user enters 5 as the age,
-the output should be "Discounted".
+
+Example
+Input : 
+5
+Output :
+Discounted
 */
 
 int main()
