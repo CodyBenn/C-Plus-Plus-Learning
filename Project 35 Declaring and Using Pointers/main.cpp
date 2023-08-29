@@ -49,7 +49,23 @@ int main()
     std::cout << "p_int (Address in memory) : " << p_int << std::endl; 
 
     //You can also change the address stored in a pointer any time
+    int int_var1 {65};
+    p_int = &int_var1; //Assign a different address to the pointer
     std::cout << "p_int (With different address) : " << p_int << std::endl;
+
+    //Cant cross assign between pointers of different types
+    int *p_int1{nullptr};
+    double double_var{33};
+
+    //p_int = &double_var{33}; //Compiler error
     
+    //Dereferencing a pointer :
+    int* p_int2{nullptr};
+    int int_data{56};
+    p_int2 = &int_data;
+
+    std::cout << "Value : " << *p_int2 << std::endl; // Dereferencing a pointer
+
+
     return 0;
 }
