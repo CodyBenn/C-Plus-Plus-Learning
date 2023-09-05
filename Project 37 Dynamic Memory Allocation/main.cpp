@@ -120,10 +120,7 @@ int main()
 
       delete p_number5;
       delete p_number5;
-
-
       //
-
-                                                            
+                                          
    std::cout << "Program is ending well" << std::endl;
 }
