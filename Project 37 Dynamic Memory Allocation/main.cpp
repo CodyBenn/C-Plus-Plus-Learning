@@ -36,7 +36,7 @@ int main()
     std::cout << "Dereferencing bad memory" << std::endl;
 	std::cout << "*p_number2 : " << *p_number2 << std::endl;
     */
-	
+   
 	
 	//Initializing pointer to null
     /*
@@ -64,7 +64,6 @@ int main()
 							//After this line executes, we will have a valid memory location
 							// allocated. The size of the allocated memory will be such that it
 							// can store the type pointed to by the pointer
-						
 					
 	*p_number4 = 77; // Writting into dynamically allocated memory
 	std::cout << std::endl;
@@ -120,6 +119,7 @@ int main()
 
       delete p_number5;
       delete p_number5;
+
       //
                                           
    std::cout << "Program is ending well" << std::endl;
