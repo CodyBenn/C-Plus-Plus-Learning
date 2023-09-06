@@ -40,5 +40,8 @@ int main()
     //undefined behaviour : Crash / Garbage or w/e.
     std::cout << "p_number4(after deleting p_number3) - " << p_number4 << " - " << *p_number4 << std::endl;
 
+
+    std::cout << "Program is ending well." << std::endl;
+
     return 0;
 }
