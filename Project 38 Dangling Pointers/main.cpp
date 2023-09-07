@@ -39,7 +39,6 @@ int main()
     //p_number4 points to deleted memory. Dereferencing it will lead to
     //undefined behaviour : Crash / Garbage or w/e.
     std::cout << "p_number4(after deleting p_number3) - " << p_number4 << " - " << *p_number4 << std::endl;
-    std::cout << "Program is ending well." << std::endl;
 
     //Solution1 : Initialize your pointers immediately upon declaration
     std::cout << std::endl;
@@ -53,6 +52,8 @@ int main()
     }else{
         std::cout << "Invalid address" << std::endl;
     }
+
+    std::cout << "Program is ending well." << std::endl;
 
     return 0;
 }
