@@ -53,6 +53,28 @@ int main()
         std::cout << "Invalid address" << std::endl;
     }
 
+    //Solution 2 :
+    //Right after you call delete on a pointer, remember to reset
+    //the pointer to nullptr to make it CLEAR it doesnt point anywhere
+
+    std::cout << std::endl;
+    std::cout << "Solution 2 : " << std::endl;
+    int *p_number7{new int {82}};
+
+    //Use the pointer however you want
+    std::cout << "p_number 7 : " << p_number7 << " - " << *p_number7 << std::endl;
+
+    delete p_number7;
+    p_number7 = nullptr; //Reset the pointer
+
+    //Check for nullptr before use
+    if(p_number7 != nullptr){
+        std::cout << "*p_number7 : " << *p_number7 << std::endl;
+    }else{
+        
+    }
+
+
     std::cout << "Program is ending well." << std::endl;
 
     return 0;
