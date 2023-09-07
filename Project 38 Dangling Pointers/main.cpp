@@ -95,7 +95,13 @@ int main()
     }
 
     delete p_number8; //Master releases the memory
-       
+    p_number8 = nullptr;
+
+    if(!(p_number8 == nullptr)){ //Only use slave pointers when master pointer is valid
+        std::cout << "p_number9 - " << p_number9 << " - " << *p_number9 << std::endl;
+    }else{
+        std::cerr << "WARNING : Trying to use an invalid pointer" << std::endl;
+    }
 
     std::cout << "Program is ending well." << std::endl;
 
