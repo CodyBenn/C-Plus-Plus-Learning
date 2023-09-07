@@ -12,6 +12,7 @@ int main()
     std::cout << "*p_number : " << *p_number << std::endl;
     */
 
+    /*
     //Case 2 : Deleted pointer
     std::cout << std::endl;
     std::cout << "Case 2 : Deleted pointer" << std::endl;
@@ -71,9 +72,30 @@ int main()
     if(p_number7 != nullptr){
         std::cout << "*p_number7 : " << *p_number7 << std::endl;
     }else{
-        
+        std::cout << "Invalid memory access!" << std::endl;
+    }
+    */
+
+    //Solution 3 
+    //For multiple pointers pointing to the same address, Make sure there is
+    //one clear pointer (Master pointer) that owns the memory (responsible for releasing when
+    //necessary), other pointers should only be able to dereference when the master pointer
+    //is 
+
+    std::cout << std::endl;
+    std::cout << "Solution 3 : " << std::endl;
+    int *p_number8 {new int{382}}; // Let's say p_number8 is the master pointer
+    int *p_number9{p_number8};
+
+    //Dereference the pointers and use them
+    std::cout << "p_number8 - " << p_number8 << " - " << *p_number8 << std::endl;
+
+    if(!(p_number8 == nullptr)){
+        std::cout << "p_number9 - " << p_number9 << " - " << *p_number9 << std::endl;
     }
 
+    delete p_number8; //Master releases the memory
+       
 
     std::cout << "Program is ending well." << std::endl;
 
