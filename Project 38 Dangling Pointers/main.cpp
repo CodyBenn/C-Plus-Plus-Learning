@@ -76,6 +76,7 @@ int main()
     }
     */
 
+
     //Solution 3 
     //For multiple pointers pointing to the same address, Make sure there is
     //one clear pointer (Master pointer) that owns the memory (responsible for releasing when
