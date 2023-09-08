@@ -11,7 +11,7 @@ int main()
     */
 
     /*
-    //Exception Mechanism
+    //Exception method
     for(size_t i{0}; i < 100; ++i){
         try{
             int * data = new int[10000000000];
@@ -21,9 +21,16 @@ int main()
     }
     */
 
-    
+    //std::nothrow method
+    for(size_t i{0}; i < 100; ++i){
+        int *data = new(std::nothrow) int[100000000000];
 
-
+        if(data != nullptr){
+            std::cout << "Data allocated" << std::endl;
+        }else{
+            std::cout << "Data allocation failed" << std::endl;
+        }
+    }
 
     std::cout << "Program is ending well" << std::endl;
     
