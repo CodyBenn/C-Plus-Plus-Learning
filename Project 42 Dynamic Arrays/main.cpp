@@ -17,7 +17,6 @@ int main()
 																	//with 1,2,3,4,5, and the 
 																	//rest will be 0's.
 
-
     //nullptr check and use the allocated array
     if(p_scores){
         std::cout << "size of scores (it's a regular pointer) : " << sizeof(p_scores) << std::endl;
