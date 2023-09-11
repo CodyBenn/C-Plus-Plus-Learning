@@ -10,6 +10,10 @@ int main()
     int& ref_int_data{int_data};
     double& ref_double_data{double_data};
 
+    std::cout << std::endl;
+    std::cout << "Round 1 starting" << std::endl;
+    std::cout << std::endl;
+
     //Print stuff out
     std::cout << "int_data : " << int_data << std::endl;
     std::cout << "&int_data : " << &int_data << std::endl;
@@ -28,7 +32,6 @@ int main()
 
     //Print stuff out again
     
-    std::cout << std::endl;
     std::cout << std::endl;
     std::cout << "Round 2 starting" << std::endl;
     std::cout << std::endl;
