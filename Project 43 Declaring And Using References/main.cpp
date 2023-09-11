@@ -48,6 +48,25 @@ int main()
     std::cout << "ref_double_data : " << ref_double_data << std::endl;
     std::cout << "&ref_double_data : " << &ref_double_data << std::endl;
 
+    std::cout << std::endl;
+    std::cout << "Round 3 starting" << std::endl;
+    std::cout << std::endl;
+
+    ref_int_data = 1012;
+    ref_double_data = 1000.45;
+
+    std::cout << "int_data : " << int_data << std::endl;
+    std::cout << "&int_data : " << &int_data << std::endl;
+    std::cout << "double_data : " << double_data << std::endl;
+    std::cout << "&double_data : " << &double_data << std::endl;
+
+    std::cout << "================================" << std::endl;
+
+    std::cout << "ref_int_data : " << ref_int_data << std::endl;
+    std::cout << "&ref_int_data : " << &ref_int_data << std::endl;
+    std::cout << "ref_double_data : " << ref_double_data << std::endl;
+    std::cout << "&ref_double_data : " << &ref_double_data << std::endl;
+
 
 
  return 0;   
