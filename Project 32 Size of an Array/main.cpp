@@ -9,7 +9,7 @@ int main()
     -------------------------------------------------------
     std::cout << "sizeof(scores) : " << sizeof(scores) << std::endl;
     std::cout << "sizeof(scores0) : " << sizeof(scores[0]) << std::endl;
-
+    
     int count {sizeof(scores)/sizeof(scores[0])}
     */
    
