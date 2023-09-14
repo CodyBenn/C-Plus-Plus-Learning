@@ -24,8 +24,8 @@ int main()
     */
 
     //Simulating reference behaviour with pointers
-    const int *const p_age{&age};
-    *p_age = 45; //Pointer will tell you that you cannot modify
+    //const int *const p_age{&age};
+    //*p_age = 45; //Pointer will tell you that you cannot modify
 
     return 0;
 }
