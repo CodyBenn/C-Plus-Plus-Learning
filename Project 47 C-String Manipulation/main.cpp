@@ -173,7 +173,6 @@ int main()
 	std::cout << "iterations : " << iterations << std::endl;
     */
 
-
 	//Find last occurence
 	//CODE STOLEN FROM THE DOCS : 
     std::cout << std::endl;
