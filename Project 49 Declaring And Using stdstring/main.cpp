@@ -33,7 +33,6 @@ int main()
     planet1 = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";
     std::cout << "planet1 : " << planet1 << std::endl;
 
-
     
     return 0;    
 }
