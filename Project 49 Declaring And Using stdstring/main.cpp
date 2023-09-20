@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
+
 int main()
 {
-
 	std::string full_name;//Empty string
     std::string planet {"Earth. Where the sky is blue"};//Initialize with string literal
 	std::string prefered_planet{planet};//Initialize with other existing string
@@ -27,12 +27,10 @@ int main()
     planet = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";
     std::cout << "planet : " << planet << std::endl;
 
-
     //Use a raw array
     const char * planet1 {"Earth. Where the sky is blue Earth."};
     planet1 = "Earth. Where the sky is blue Earth. Where the sky is blue Earth. Where ";
     std::cout << "planet1 : " << planet1 << std::endl;
-
     
     return 0;    
 }
